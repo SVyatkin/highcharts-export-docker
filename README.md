@@ -43,5 +43,5 @@ curl -H "Content-Type: application/json" -X POST -d '{"infile":{"title": {"text"
 #### Stop 
 
 ```
-docker stop highcharts_test
+docker stop highcharts
 ```
