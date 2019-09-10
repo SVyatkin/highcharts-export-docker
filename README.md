@@ -13,7 +13,7 @@ https://hub.docker.com/r/onsdigital/highcharts-export-node/
 ```
 docker build -t onsdigital/highcharts-export-node . 
 ```
-### Check docker images
+#### Check docker images
 
 ```
 docker images 
@@ -27,7 +27,7 @@ docker run -d --name highcharts -p 8889:8080 onsdigital/highcharts-export-node
 The above command will expose the service on port 8889. This can be changed if required.
 
 
-### Check running comtainers
+#### Check running containers
 
 ```
 docker ps -a
@@ -40,7 +40,7 @@ Once the server is running here is an example curl command to render a chart:
 curl -H "Content-Type: application/json" -X POST -d '{"infile":{"title": {"text": "Steep Chart"}, "xAxis": {"categories": ["Jan", "Feb", "Mar"]}, "series": [{"data": [29.9, 71.5, 106.4]}]}}' 127.0.0.1:8889 -o testchart.png
 ```
 
-### Stop 
+#### Stop 
 
 ```
 docker stop highcharts_test
